@@ -29,7 +29,14 @@
 #else
 #include <WProgram.h>
 #endif
+// Airton secances
+#define AIRTON_HDR_MARK 3000
+#define AIRTON_HDR_SPACE 1728
+#define AIRTON_ONE_MARK 1096
+#define AIRTON_ZERO_MARK 452
 
+//
+//
 // Pulse parms are *50-100 for the Mark and *50+100 for the space
 // First MARK is the one after the long gap
 // pulse parameters in usec
