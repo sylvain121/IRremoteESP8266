@@ -165,7 +165,7 @@ public:
       }
   };
 
-  void IRsend::Airton(char power, char mode, char temperature, char flowControl);
+  void Airton(char power, char mode, char temperature, char flowControl);
   void sendCOOLIX(unsigned long data, int nbits);
   void sendWhynter(unsigned long data, int nbits);
   void sendNEC(unsigned long data, int nbits);
