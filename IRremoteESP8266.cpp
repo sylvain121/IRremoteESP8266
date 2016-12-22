@@ -136,20 +136,21 @@ void IRsend::Airton(char power, char mode, char temperature, char flowControl)
 	mark(AIRTON_HDR_MARK);
 	space(AIRTON_HDR_SPACE);
 
-	for(int i = 0; i < 13 ; i++)
+	for(int i = 0; i <= 13 ; i++)
 	{
 		for(int y = 0; y < 8; y++)
 		{
 			if(raw[i] & 0x80)
 			{
-				mark(AIRTON_HDR_MARK);
-				space(AIRTON_HDR_SPACE);
+				space(AIRTON_ZERO_MARK);
+				mark(AIRTON_ONE_MARK);
 
 			} 
 			else 
 			{
-				mark(AIRTON_HDR_MARK);
-				space(AIRTON_HDR_SPACE);
+				space(AIRTON_ZERO_MARK);
+				space(AIRTON_ZERO_MARK);
+
 
 			}
 
